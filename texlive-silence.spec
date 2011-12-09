@@ -1,11 +1,11 @@
-# revision 17242
+# revision 24792
 # category Package
 # catalog-ctan /macros/latex/contrib/silence
-# catalog-date 2010-02-28 15:24:01 +0100
+# catalog-date 2011-12-06 22:18:19 +0100
 # catalog-license lppl
-# catalog-version 1.3
+# catalog-version 1.4
 Name:		texlive-silence
-Version:	1.3
+Version:	1.4
 Release:	1
 Summary:	Selective filtering of error messages and warnings
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The package allows the user to filter out unwanted warnings and
@@ -32,19 +29,19 @@ with..."). Messages may be saved to an external file for later
 reference.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
