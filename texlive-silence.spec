@@ -28,16 +28,8 @@ and such") to the fine-grained ("avoid messages that begin
 with..."). Messages may be saved to an external file for later
 reference.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -52,7 +44,6 @@ reference.
 #- source
 %doc %{_texmfdistdir}/source/latex/silence/silence-doc.dtx
 %doc %{_texmfdistdir}/source/latex/silence/silence.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,5 +54,3 @@ reference.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
