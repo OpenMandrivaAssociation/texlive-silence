@@ -1,4 +1,4 @@
-# revision 24792
+# revision 25210
 # category Package
 # catalog-ctan /macros/latex/contrib/silence
 # catalog-date 2011-12-06 22:18:19 +0100
@@ -6,7 +6,7 @@
 # catalog-version 1.4
 Name:		texlive-silence
 Version:	1.4
-Release:	2
+Release:	3
 Summary:	Selective filtering of error messages and warnings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/silence
