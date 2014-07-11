@@ -6,7 +6,7 @@
 # catalog-version 1.5b
 Name:		texlive-silence
 Version:	1.5b
-Release:	6
+Release:	7
 Summary:	Selective filtering of error messages and warnings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/silence
