@@ -1,6 +1,6 @@
 Name:		texlive-silence
 Version:	27028
-Release:	1
+Release:	2
 Summary:	Selective filtering of error messages and warnings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/silence
