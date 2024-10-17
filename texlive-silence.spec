@@ -3,7 +3,7 @@ Version:	27028
 Release:	2
 Summary:	Selective filtering of error messages and warnings
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/silence
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/silence
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/silence.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/silence.doc.r%{version}.tar.xz
